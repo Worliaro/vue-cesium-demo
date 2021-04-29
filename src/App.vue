@@ -1,5 +1,13 @@
 <template>
-  <router-view />
+  <div style="width: 100%; height: 100%">
+    <div class="route-style">
+      <router-link to="/" exact>base</router-link>
+    </div>
+    <div class="route-style">
+      <router-link to="/cesium-demo01" exact>demo01</router-link>
+    </div>
+    <router-view></router-view>
+  </div>
 </template>
 
 <style lang="scss">
@@ -28,5 +36,9 @@ body {
       color: #42b983;
     }
   }
+}
+
+.route-style {
+  font-size: 16px;
 }
 </style>

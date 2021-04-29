@@ -1,11 +1,19 @@
 import { createRouter, createWebHashHistory } from "vue-router";
-import Home from "../views/Home.vue";
+import Base from "../views/base.vue";
+// demo
+import CesiumDemo01 from "../views/demo01";
 
 const routes = [
   {
     path: "/",
-    name: "Home",
-    component: Home,
+    name: "Base",
+    component: Base,
+  },
+  {
+    path: "/cesium-demo01",
+    // path: "/",
+    name: "CesiumDemo01",
+    component: CesiumDemo01,
   },
 ];
 

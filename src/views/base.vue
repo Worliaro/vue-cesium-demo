@@ -5,8 +5,7 @@
 </template>
 
 <script>
-// import { Viewer, UrlTemplateImageryProvider } from "cesium";
-import * as Cesium from "cesium";
+import { Viewer, UrlTemplateImageryProvider } from "cesium";
 
 export default {
   name: "CesiumEarth",
@@ -18,10 +17,7 @@ export default {
   methods: {
     init() {
       const vm = this;
-      Cesium.Ion.defaultAccessToken =
-        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJmNWNlODhlNS1mN2Y4LTRkYTctYTlhZC0yNTdjMWJlNWE5ZjYiLCJpZCI6MjQwODAsImlhdCI6MTYxOTQ2MzU5MH0.dlg0s0ZugwP0jOSBzy0Rtoony0tUt8TSQLyNnb1IKjM";
-
-      const viewer = new Cesium.Viewer("cesiumContainer", {
+      const viewer = new Viewer("cesiumContainer", {
         // baseLayerPicker: false,
         // fullscreenButton: false,
         // geocoder: false,
